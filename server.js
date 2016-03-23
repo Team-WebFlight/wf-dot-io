@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('app listening on 3000');
+  console.log('WebFlight.io listening on 3000');
 });

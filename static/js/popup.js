@@ -7,6 +7,7 @@ $(document).ready(() => {
     width: 400,
     autoOpen: false,
     modal: true,
+    show: 'clip',
     closeOnEscape: true
   });
 
