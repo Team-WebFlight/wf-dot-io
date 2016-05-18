@@ -5,32 +5,32 @@
   <meta charset="UTF-8">
   <title>WebFlight - P2P Site Delivery</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="js/popup.js"></script>
-
 </head>
 
 <body>
-  <div class="navbar">
-    <div id="title">WebFlight<sup><span id='beta'> alpha</span></sup></div>
-    <div class="nav-links">
+  <div class="container">
+    <div class="navbar">
+      <div id="title">WebFlight<sup><span id='beta'> alpha</span></sup></div>
+      <div class="nav-links">
       <a href="https://www.github.com/Team-WebFlight/WebFlight" target="_blank">GitHub</a>
       <a href="https://github.com/Team-WebFlight/WebFlight/blob/master/README.md" target="_blank">Docs</a>
-      <a href="#">Performance</a>
-      <a href="#">Demo</a>
+      </div>
     </div>
-  </div>
 
   <div id="webflight">Web<span id="meddon">Flight</span></div>
   <div id="tagline">Turn your server into a seed for P2P content delivery.</div>
   <div id="intro">WebFlight is Node.js middleware for serving the content on your website with a peer-to-peer network powered by <a href="https://webtorrent.io" target="_blank">WebTorrent</a>. WebFlight is highly configurable and can be easily dropped into any Express-based
     application.</div>
 
-  <div id="browser"><img src="assets/browser.png"></div>
-  <div id="loader"><img src="assets/ripple.gif"></div>
-  <div id="browser2"><img src="assets/browser.png"></div>
+  <div class="gif-container">
+    <div id="browser"><img src="static/assets/browser.png"></div>
+    <div id="loader"><img src="static/assets/ripple.gif"></div>
+    <div id="browser2"><img src="static/assets/browser.png"></div>
+  </div>
 
   <div id="code-block">
     <div class="instructions">Installation</div>
@@ -44,11 +44,11 @@
         <br><br>var wf = new WebFlight(options)
         <br><br>wf.init() </code>
     </div>
+   </div>
   </div>
-
   <div class="footer">
     <p class="footer-left">
-      <a href="#" id="feedback-link">Feedback</a>
+      <a href="https://github.com/Team-WebFlight/webflight-react">WebFlight-React</a>
       <a href="https://github.com/Team-WebFlight/WebFlight/issues/new" target="_blank">Issues</a>
       <p id="star-icon">
         <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js">
@@ -61,24 +61,7 @@
       Brought to you by Team WebFlight: <a href="https://github.com/CarolAG/" target="_blank">Carol</a>, <a href="https://github.com/coryc5/" target="_blank">Cory</a>, <a href="https://github.com/10000highfives/" target="_blank">Jared</a>, <a href="https://github.com/tbywong/"
         target="_blank">Tiffany</a>
     </p>
-
   </div>
-
-  <div class="form">
-    <form method="POST" name="contact_form" action="https://formspree.io/tbywong@gmail.com">
-      <h2><center>We love feedback!</center></h2>
-      <div class="words">Name:</div>
-      <input type="text" name="name">
-      <div class="words">Email:</div>
-      <input type="text" name="_replyto">
-      <div class="words">Message: </div>
-      <textarea id="feedback_text" name="message"></textarea>
-      <br>
-      <input type="submit" value="Send" id="submit">
-      <input type="button" id="close" value="Close">
-    </form>
   </div>
-
 </body>
-
 </html>
